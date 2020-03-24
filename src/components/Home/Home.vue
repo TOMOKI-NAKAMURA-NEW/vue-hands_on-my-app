@@ -1,4 +1,4 @@
-  <template>
+<template>
   <v-container fluid>
     <v-img src="@/assets/reading.jpg" height="900">
     </v-img>

@@ -3,19 +3,17 @@
     dark
   >
     <v-toolbar-title class="headline text-uppercase">
-      <router-link to="/" class="router-link-layout">Vuetify MATERIAL DESIGN</router-link>
+      <router-link to="/" class="router-link-layout">Vuetify</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <Login />
-    <Signup />
   </v-app-bar>
 </template>
 
 <script>
-import Signup from "./Signup";
 import Login from "./Login";
 export default {
-  components: { Signup, Login }
+  components: { Login }
 };
 </script>
 
