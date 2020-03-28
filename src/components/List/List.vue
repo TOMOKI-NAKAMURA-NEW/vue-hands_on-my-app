@@ -1,17 +1,76 @@
 <template>
-  <v-container fluid class="pa-0">
-    <v-row align="center">
-      <v-col cols="12" sm="6">
-        <div class="text-center">
-          <div class="my-2">
-            <v-btn x-large color="success" dark @click="getBooksImg">本画像を取得</v-btn>
-          </div>
-        </div>
-      </v-col>
-    </v-row>
-    <img :src="dataUrl">
+  <v-container grid-list-md>
+    <v-layout row wrap>
+      <v-flex xs6 sm4 md3 lg2>
+        <v-card v-if="dataUrl">
+          <v-img :src="dataUrl"></v-img>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <i class="far fa-trash-alt"></i>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs6 sm4 md3 lg2>
+        <v-card v-if="dataUrl">
+          <v-img :src="dataUrl"></v-img>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <i class="far fa-trash-alt"></i>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs6 sm4 md3 lg2>
+        <v-card v-if="dataUrl">
+          <v-img :src="dataUrl"></v-img>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <i class="far fa-trash-alt"></i>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs6 sm4 md3 lg2>
+        <v-card v-if="dataUrl">
+          <v-img :src="dataUrl"></v-img>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <i class="far fa-trash-alt"></i>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs6 sm4 md3 lg2>
+        <v-card v-if="dataUrl">
+          <v-img :src="dataUrl"></v-img>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <i class="far fa-trash-alt"></i>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs6 sm4 md3 lg2>
+        <v-card v-if="dataUrl">
+          <v-img :src="dataUrl"></v-img>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <i class="far fa-trash-alt"></i>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <v-btn x-large color="success" dark @click="getBooksImg">本画像を取得</v-btn>
   </v-container>
-</template>
+</template> 
 
 <script>
 export default {
