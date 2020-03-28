@@ -7,13 +7,18 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <Login />
+    <Signup />
   </v-app-bar>
 </template>
 
 <script>
+import Signup from "./Signup";
 import Login from "./Login";
 export default {
-  components: { Login }
+  components: { 
+    Signup,
+    Login
+  }
 };
 </script>
 

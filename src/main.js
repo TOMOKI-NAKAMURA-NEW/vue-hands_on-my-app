@@ -5,13 +5,16 @@ import router from'./router'; //追記
 import axios from 'axios' //追記
 import VueAxios from 'vue-axios' //追記
 import firebase from 'firebase' //追記
+import Vuex from 'vuex' //追記
+import store from './store.js' //追記
 
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 Vue.use(VueAxios, axios)
+Vue.use(Vuex)
 
 
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyDjVY2m8jaV9mU6nsYBK7TqoRSs6dSMLrM",
   authDomain: "vue-hands-on-cecbc.firebaseapp.com",
   databaseURL: "https://vue-hands-on-cecbc.firebaseio.com",
@@ -22,10 +25,11 @@ const firebaseConfig = {
   measurementId: "G-EYGJ18TPL8"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 firebase.analytics();
 
 new Vue({
+  store,
   vuetify,
   router,
   render: h => h(App)
